@@ -114,3 +114,73 @@ header {
 
   margin-top: auto; 
 }
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 15px 20px;
+    gap: 15px;
+  }
+
+  .menu {
+    position: static;
+    transform: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  .beranda-a h2 {
+    font-size: 36px;
+  }
+
+  .beranda-a p {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+
+  .logo {
+    width: 70px;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .menu a {
+    font-size: 14px;
+  }
+
+  .beranda-a {
+    padding: 0 15px;
+  }
+
+  .beranda-a h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .beranda-a p {
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  .container-footer {
+    font-size: 13px;
+    padding: 10px;
+  }
+}
